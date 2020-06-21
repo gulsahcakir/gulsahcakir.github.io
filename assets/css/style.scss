@@ -20,29 +20,8 @@ img {
 }
 
 .default > .page-header {
-  // color: #1d2429;
-  // color: #fff;
-  // padding: 1.5rem 6rem;
-  // background-image: url(/img/title-bar.jpg);
-  // background-image: linear-gradient(45deg, #0957ad, #007ba0, #00a58e 70%);
-  // background-repeat: no-repeat;
-  // background-size: 120% 400px;
-  // animation: banner-gradient 15s ease-out infinite;
-  // background-size: 200%;
-  // animation: banner-gradient 18s linear infinite;
-
   color: #332121;
   padding: 1.5rem 6rem;
-  background-image: linear-gradient(45deg, #0957ad, #007ba0, #00a58e 70%);
-  background-repeat: no-repeat;
-  background-size: 300% 700px;
-  animation: banner-gradient 30s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
-  background-image: linear-gradient(
-    -15deg,
-    #15c39a 20%,
-    #4c7af1 50%,
-    #15c39a 85%
-  );
 }
 
 .sub-page.cps-page > header {
