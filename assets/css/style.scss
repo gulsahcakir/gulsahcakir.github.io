@@ -1,0 +1,272 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "sf-pro.css";
+@import "./tile.css";
+
+img {
+  // border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.cps-page .main-content p:first-child {
+  font-size: 0;
+}
+
+.sub-page > .page-header {
+  padding: 0.2rem 6rem;
+  padding-bottom: 0.6rem;
+}
+
+.default > .page-header {
+  // color: #1d2429;
+  // color: #fff;
+  // padding: 1.5rem 6rem;
+  // background-image: url(/img/title-bar.jpg);
+  // background-image: linear-gradient(45deg, #0957ad, #007ba0, #00a58e 70%);
+  // background-repeat: no-repeat;
+  // background-size: 120% 400px;
+  // animation: banner-gradient 15s ease-out infinite;
+  // background-size: 200%;
+  // animation: banner-gradient 18s linear infinite;
+
+  color: #332121;
+  padding: 1.5rem 6rem;
+  background-image: linear-gradient(45deg, #0957ad, #007ba0, #00a58e 70%);
+  background-repeat: no-repeat;
+  background-size: 300% 700px;
+  animation: banner-gradient 30s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+  background-image: linear-gradient(
+    -15deg,
+    #15c39a 20%,
+    #4c7af1 50%,
+    #15c39a 85%
+  );
+}
+
+.sub-page.cps-page > header {
+  background-color: #111b1e;
+  background-image: unset;
+}
+
+.page-header .project-tagline {
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0.67em 0;
+  font-weight: 600;
+}
+
+.cps-page h1.project-name {
+  font-weight: 300;
+}
+
+.sub-page section.main-content {
+  max-width: unset;
+  padding: 0;
+}
+
+.main-content p {
+  font-size: 30px;
+  margin-bottom: 0.4em;
+}
+a {
+  color: #06c;
+}
+
+.main-content li a {
+  font-size: 20px;
+}
+
+.main-content img {
+  width: 100%;
+  margin: 0;
+}
+
+.site-footer {
+  display: none;
+}
+
+.project-tagline {
+  margin-bottom: 1em;
+}
+
+div.top-btn-container {
+  position: absolute;
+}
+
+a.top-icon:hover {
+  border: 1.5px solid white;
+}
+
+a.top-icon,
+.footer-icon {
+  position: relative;
+  width: 3.25rem;
+  background-size: 80%;
+  background-position: center;
+  border-radius: 50%;
+  transition: border 50ms ease-out;
+  background-repeat: no-repeat;
+  margin: 13px 0 0 0;
+  height: 3.25rem;
+  display: inline-block;
+  z-index: 10;
+}
+
+.footer-icon {
+  margin: 0px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 70%;
+}
+
+.contact-container > a {
+  cursor: pointer;
+  padding: 0px 15px 0px 10px;
+  margin: 0px 5px;
+  line-height: 2.5rem;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 50px;
+  background: #0066d6;
+  color: white;
+}
+
+.contact-container > a:hover {
+  transform: scale(1.05);
+  text-decoration: unset;
+  background: #0251a7;
+  color: #ffffff;
+  transition: 70ms ease-out;
+  border: none;
+}
+
+.contact-container > a:hover .footer-icon.gmail {
+  background-image: url(/img/gmail-logo-filled.png);
+}
+
+.contact-container > a:hover .footer-icon.linkedin {
+  background-image: url(/img/ln-logo-filled.png);
+}
+
+.contact-container > a:hover .footer-icon.github-logo-bordered {
+  background-image: url(/img/gh-logo-filled.png);
+}
+
+.gmail {
+  background-image: url(/img/gmail-logo-bordered.png);
+}
+
+.linkedin {
+  background-image: url(/img/ln-logo-bordered.png);
+}
+
+a.homepage {
+  background-image: url("/img/home-white.png");
+}
+
+.github-logo {
+  background-image: url(/img/gh-logo-filled.png);
+}
+
+.github-logo-bordered {
+  background-image: url(/img/gh-logo-bordered.png);
+}
+
+.top-icon.github-logo {
+  margin: 13px 0 0 10px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Display", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer.page-footer {
+  position: relative;
+  bottom: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  // border-top: 1px solid #797979;
+  width: 98%;
+  margin: 0px 1%;
+}
+
+.main-content li {
+  line-height: 35px;
+}
+
+.main-content ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 64em) and (min-width: 42em) {
+  a.top-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  a.top-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .default > .page-header {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .sub-page.cps-page > .page-header {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-container a {
+    display: inline-flex;
+    padding: 0px 7.5px 0px 5px;
+    margin: 0px 2.5px;
+    line-height: 1.25rem;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-container div {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@keyframes banner-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  25% {
+    background-position: 40% 0;
+  }
+
+  50% {
+    background-position: 50% 70%;
+  }
+
+  75% {
+    background-position: 100% 40%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
