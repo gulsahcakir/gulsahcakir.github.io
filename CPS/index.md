@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cps
 title: Cyber Physical Systems
 description: This page showcases our portfolio for CE-591
 ---
